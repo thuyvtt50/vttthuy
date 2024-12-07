@@ -1,0 +1,332 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+*{scroll-behavior: smooth}
+/*section{ padding-top:100px; padding-bottom: 50px}*/
+body
+{
+	/*background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100%;	
+	background-attachment: fixed;*/
+	color: rgba(0,0,0,0.8);
+	font-size: 16px;
+	font-family:"Nunito", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0
+}
+
+h1,h2
+{
+	 font-family: "Yrsa", serif;
+}
+.font-dacbiet
+{
+	font-family: "Mea Culpa", cursive;
+  	font-weight: 800;
+  	font-style: normal;
+	color: rgba(197,0,141,1.00);
+}
+h1{ font-size: 48px}
+h2{ font-size: 36px}
+h3{ font-size: 32px}
+h4{font-size: 24px}
+h5{font-size: 22px}
+h6{font-size: 18px}
+h1,h2,h3,h4,h5,h6{ 
+	margin-top: 0; 
+	margin-bottom: 5px
+}
+/* cho nay bat dau dinh dang mau chu cho web*/
+h1{ font-size: 3rem}
+h2{ font-size: 2.5rem}
+h1,h2,h3,h4,h5,h6{ margin-top: 0; margin-bottom: 0px; line-height: 2.5rem}
+.text-primary
+{
+	color:#9C0C8A
+}
+
+.text-secondary
+{
+	color:hotpink
+}
+.text-light
+{
+	color: #FFFFFF
+}
+.text-dark
+{
+	color: rgba(0,0,0,0.8)
+}
+/*--- dinh dang mau nen background cho web-----*/
+.bg-primary
+{
+	background-color: #C10DC0
+}
+.bg-primary-10
+{
+	background-color: rgba(154,14,179,0.1)
+}
+.btn-primary
+{
+	background-color:#C10DC0;
+	padding: 5px 20px;
+	color: #fff;
+	text-decoration:none;
+	border-radius: 15px;
+	transition: all 1s		
+}
+.btn-primary:hover
+{
+	background-color:hotpink;
+	box-shadow: 0 10px 20px rgba(192,136,193,1.00) 
+}
+.bg-secondary
+{
+	background-color:#098680
+}
+/*--------------dinh dang vung section-----------------------------*/
+
+*{ box-sizing: border-box} /* giữ đường vien vao trong*/
+.container
+{/* box container sẽ chiếm 90% độ rộng màn hình và nằm giữa*/
+	width: 90%; margin: auto 
+}
+@media (min-width:600px)
+{
+		.container
+	{
+		width: 80%; margin: auto 
+	}
+}
+.col-1 { width: 8.33%; }
+.col-2{width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+/* phải cho các cột vào dòng row, thì mới dược sắp nằm cạnh nhau cho đủ 100%*/
+.row{ display: flex; flex-wrap: wrap}
+/*tất cả các cột đều có đường viền đỏ và đẩy bờ lề vào trong là 15px*/
+[class*="col-"] {
+  padding: 15px;
+ /* border: 1px solid red;*/
+}
+.img-100{ width: 100%; height: auto}
+.text-center{ text-align: center}
+@media (min-width:600px)
+{
+	.col-md-1 { width: 8.33%; }
+	.col-md-2{width: 16.66%}
+	.col-md-3{ width: 25%}
+	.col-md-4{ width: 33.33%}
+	.col-md-5{ width: 41.66%}
+	.col-md-6{ width: 50%}
+	.col-md-7{ width: 58.33%}
+	.col-md-8{ width: 66.66%}
+	.col-md-9{ width: 75%}
+	.col-md-10{ width: 83.33%}
+	.col-md-11{ width: 91.66%}
+	.col-md-12{ width: 100%}
+}
+@media (min-width:960px)
+{
+	.col-lg-1 { width: 8.33%; }
+	.col-lg-2{width: 16.66%}
+	.col-lg-3{ width: 25%}
+	.col-lg-4{ width: 33.33%}
+	.col-lg-5{ width: 41.66%}
+	.col-lg-6{ width: 50%}
+	.col-lg-7{ width: 58.33%}
+	.col-lg-8{ width: 66.66%}
+	.col-lg-9{ width: 75%}
+	.col-lg-10{ width: 83.33%}
+	.col-lg-11{ width: 91.66%}
+	.col-lg-12{ width: 100%}
+}
+
+/*--- dinh dang trong flex---*/
+.d-flex{ display: flex}
+/*--- dẩy các box trong flexc theo chiều ngang*/
+.justify-content-start{justify-content:flex-start}
+.justify-content-end{justify-content:flex-end}
+.justify-content-center{justify-content:center}
+.justify-content-between{justify-content:space-between}
+.justify-content-around{justify-content:space-around}
+/*--- đẩy các cột trong flex theo chiều dọc*/
+.align-items-start{ align-items: flex-start}
+.align-items-end{ align-items: flex-end}
+.align-items-center{ align-items:center}
+.align-items-stretch{ align-items:stretch}
+
+	#welcome
+{
+	
+	background-image: url("../images/bg-welcome3.jpg"),linear-gradient(129deg, rgba(34,193,195,1) 65%, rgba(253,187,45,0.8099614845938375) 100%);
+	background-repeat: no-repeat;
+	background-position: 95% center;
+
+
+}
+@font-face {
+    font-family: 'SVN-Comic Sans MS';
+    src: url('SVN-ComicSansMS.eot');
+    src: url('SVN-ComicSansMS.eot?#iefix') format('embedded-opentype'),
+        url('SVN-ComicSansMS.woff2') format('woff2'),
+        url('SVN-ComicSansMS.woff') format('woff'),
+        url('SVN-ComicSansMS.ttf') format('truetype'),
+        url('SVN-ComicSansMS.svg#SVN-ComicSansMS') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SVN-Ready';
+    src: url('SVN-Ready.eot');
+    src: url('SVN-Ready.eot?#iefix') format('embedded-opentype'),
+        url('SVN-Ready.woff2') format('woff2'),
+        url('SVN-Ready.woff') format('woff'),
+        url('SVN-Ready.ttf') format('truetype'),
+        url('SVN-Ready.svg#SVN-Ready') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+p{ 
+	font-family: 'SVN-Comic Sans MS';
+	font-size: 20px;
+	color: rgba(0,0,0,0.5)
+}
+
+
+.font-special, h1,h2,h3,h4,h5,h6
+{
+	font-family: 'SVN-Ready';
+	
+}
+.mx-auto{ margin-left: auto; margin-right: auto}
+.mt-40{ margin-top: 40px}
+.py-40{padding-top:40px; padding-bottom: 40px }
+.p-100{ padding: 100px}
+.mt-10{ margin-top: 10px}
+.mt-20{ margin-top: 20px}
+.mt-5{ margin-top: 5px}
+.mt-0{ margin-top: 0px}
+.p-0{ padding: 0}
+/*---------- style cho menu responsive------*/
+
+header{
+	position: fixed;
+	width: 100%;
+	left: 0; top: 0;
+	z-index: 99999
+}
+header nav
+{
+	background: #fff;
+	padding: 10px 0;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+	margin-bottom: 10px;
+	position: relative
+}
+nav .container{ position: relative}
+nav .btn-toggle
+{
+	position: absolute; 
+	right: 0;
+	font-size: 18px;
+	cursor: pointer;
+	border: 1px solid #8C0762;
+	background: #F8E3F6;
+	color: #9C0C8A
+}
+nav .brand
+{
+	text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	}
+nav .menu{
+/*	border: 1px solid red*/
+}
+nav .menu ul
+{/* bỏ chấm đầu dòng trong un orderlist*/
+	list-style: none; 
+	margin: 0;
+	padding: 0
+}
+nav .menu ul li
+{
+	position: relative
+}
+nav .menu ul li a
+{
+	text-decoration: none;
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	color: #666
+}
+nav .menu ul li a:hover
+{
+	background-color:#F8E3F6
+}
+.menu { display: none}
+@media (min-width:900px)
+{
+	.menu{ display: block !important}
+	nav .btn-toggle{ display: none}
+	nav .container,	nav .menu ul		
+	{ 
+		display: flex;
+		justify-content: space-between;
+		align-items: center
+	}
+	nav .menu ul li a 
+	{
+		border-bottom: none;
+		padding: 7px 25px}
+}	
+.progress-bar
+{
+	background-color: #ddd;
+	border-radius: 10px;
+	height: 15px;
+	margin-top: -16px
+}
+.progress{
+	height: 100%;
+	border-radius: 10px 0 0 10px;
+	font-size: 10px; color: #fff;
+	text-align:right;
+	font-weight: 800;
+	padding-right: 5px
+}
+.title-page{
+	color: #fff;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
